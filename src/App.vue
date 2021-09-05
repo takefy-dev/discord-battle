@@ -1,22 +1,31 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <header>
+    <Navbar/>
+  </header>
+  <!--  <language-switcher v-slot="{ links }" tag="ul" active-class="my-custom-class">-->
+  <!--    <li :class="link.activeClass" v-for="link in links" :key="link.langIndex">-->
+  <!--      <a :href="link.url">{{ link.langIndex }}</a>-->
+  <!--    </li>-->
+  <!--  </language-switcher>-->
   <router-view/>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Navbar from './components/Navbar'
 
+export default {
+  components: { Navbar }
+}
+</script>
+
+<style>
 #nav {
   padding: 30px;
+}
+
+* {
+  background-color: #161F2D;
+  font-family: IBM Plex Mono,Menlo,DejaVu Sans Mono,Lucida Console,monospace;
 }
 
 #nav a {

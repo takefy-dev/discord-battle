@@ -1,5 +1,7 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import translations from '../lang/translations'
+import { createLangRouter } from 'vue-lang-router'
 
 const routes = [
   {
@@ -17,9 +19,14 @@ const routes = [
   }
 ]
 
-const router = createRouter({
-  history: createWebHashHistory(),
+const langRouterOptions = {
+  defaultLanguage: 'en',
+  translations
+}
+const routerOptions = {
+  history: createWebHistory(),
   routes
-})
+}
+const router = createLangRouter(langRouterOptions, routerOptions)
 
 export default router
