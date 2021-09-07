@@ -1,7 +1,14 @@
 {
   "navbar": {
     "how-to-play": "How to play ?",
-    "speedgame": "Quick game"
+    "speedgame": "Quick game",
+    "profile-dropdown" : {
+      "profile": "Profile",
+      "friends": "Friends",
+      "settings": "Settings",
+      "logout": "Logout"
+
+    }
 
   }
 }

@@ -1,6 +1,12 @@
   {
   "navbar" : {
     "how-to-play": "Comment jouer ?",
-    "speedgame": "Jeux rapide"
+    "speedgame": "Jeux rapide",
+    "profile-dropdown" : {
+      "profile": "Profile",
+      "friends": "Amis",
+      "settings": "Paramètres",
+      "logout": "Déconnexion"
+    }
   }
 }

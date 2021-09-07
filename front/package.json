@@ -17,6 +17,7 @@
     "dotenv": "^10.0.0",
     "postcss": "^7.0.36",
     "postcss-loader": "^4.0.4",
+    "socket.io-client": "^4.2.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.9",
     "vue": "^3.0.0",
     "vue-lang-router": "^2.1.0",

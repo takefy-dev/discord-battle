@@ -16,21 +16,11 @@ export default {
 </script>
 
 <style>
-#nav {
-  padding: 30px;
-}
-
 * {
-  background-color: #161F2D;
   font-family: IBM Plex Mono,Menlo,DejaVu Sans Mono,Lucida Console,monospace;
 }
+body {
+  background-color: #161F2D;
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>

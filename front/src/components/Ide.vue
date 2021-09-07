@@ -4,8 +4,8 @@
     :lang="lang"
     @init="editorInit"
     theme="dracula"
+    style="min-height:100px; min-width: 100%;"
     :printMargin="false"
-    style="height: 300px; width: 300px"
     :options="options"
   />
 

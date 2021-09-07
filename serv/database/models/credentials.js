@@ -15,13 +15,19 @@ module.exports =  (database, DataTypes) => {
       refreshToken: {
         type: DataTypes.STRING,
         allowNull: false
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false
       }
     }, {
       tableName: modelName,
       charset: 'utf8mb4',
       collate: 'utf8mb4_general_ci'
     })
-    database.models[modelName].sync()
+    database.models[modelName].sync({
+      alter: true
+    })
     return database.models[modelName]
   } catch (e) {
     console.log(e)

@@ -16,7 +16,7 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser(async (discordId, done) => {
   try {
     const user = await global.database.database.models.users.findOne({ where: { discordId } })
-    return user ? done(null, user) : done(null, null)
+    return user.get() ? done(null, user.get()) : done(null, null)
   } catch (e) {
     console.log(e)
     return done(e, null)
@@ -30,10 +30,11 @@ passport.use(
     callbackURL,
     scope: ['identify', 'email']
   }, async (accessToken, refreshToken, profile, done) => {
+    console.log(profile)
     const {
         id,
-        email,
         avatar,
+        email,
         username,
         discriminator
       } = profile,
@@ -43,7 +44,6 @@ passport.use(
       discordId: id
     }, {
       discordId: id,
-      email,
       avatar,
       username,
       discriminator,
@@ -58,9 +58,10 @@ passport.use(
         }, {
           accessToken: encryptedAccessToken,
           refreshToken: encryptedRefreshToken,
+          email,
           discordId: id
         })
-        return done(null, user)
+        return done(null, user.get())
       }
 
     } catch (e) {

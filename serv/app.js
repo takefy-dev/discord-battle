@@ -18,7 +18,6 @@ app.use(cors({
 }))
 
 const database = new Database()
-
 app.use(session({
   secret: secretSessions,
   cookie: {
