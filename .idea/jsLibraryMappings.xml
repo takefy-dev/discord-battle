@@ -3,5 +3,7 @@
   <component name="JavaScriptLibraryMappings">
     <file url="PROJECT" libraries="{@widgetbot}" />
     <includedPredefinedLibrary name="Node.js Core" />
+    <excludedPredefinedLibrary name="discord-battle/front/node_modules" />
+    <excludedPredefinedLibrary name="discord-battle/serv/node_modules" />
   </component>
 </project>

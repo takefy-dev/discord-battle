@@ -1,6 +1,6 @@
 <template>
   <div @click="active = !active"
-       class="hidden md:block dropdown  relative inline-block bg-gray-600 hover:bg-secondary transition duration-300 ease-in-out text-white rounded-md px-7 py-3 uppercase">
+       class="hidden md:block dropdown  relative inline-block bg-back hover:bg-secondary transition duration-300 ease-in-out text-white rounded-md px-7 py-3 uppercase">
     🌐 Change region
     <div
       class="dropdown-content -ml-6 mt-5 text-white absolute bg-primary transition duration-300 ease-in-out rounded-md px-7 py-3"

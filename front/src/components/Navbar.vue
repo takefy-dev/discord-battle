@@ -2,31 +2,31 @@
   <nav class="flex items-center p-3 mt-4">
     <h1 class="logo cursor-pointer text-secondary font-medium">DISCORDBattle</h1>
     <router-link to="/how-to-play"
-                 class="hidden mx-4 md:block bg-gray-600 hover:bg-secondary transition duration-300 ease-in-out text-white rounded-md px-7 py-3 uppercase">
+                 class="hidden mx-4 md:block bg-back hover:bg-secondary transition duration-300 ease-in-out text-white rounded-md px-7 py-3 uppercase">
       {{ $t('navbar.speedgame') }}
     </router-link>
     <LangSwitcher/>
     <ul
       class="hidden md:flex flex-1 text-white text-bold cursor-pointer justify-end items-center gap-5 text-sm">
       <router-link to="/how-to-play"
-                   class="bg-gray-600 hover:bg-secondary transition duration-300 ease-in-out text-white rounded-md px-7 py-3 uppercase">
+                   class="bg-back hover:bg-secondary transition duration-300 ease-in-out text-white rounded-md px-7 py-3 uppercase">
         {{ $t('navbar.how-to-play') }}
       </router-link>
       <button v-if="!isLogin" @click="login"
-              class="bg-gray-600 hover:bg-secondary transition duration-300 ease-in-out text-white rounded-md px-7 py-3 uppercase">
+              class="bg-back hover:bg-secondary transition duration-300 ease-in-out text-white rounded-md px-7 py-3 uppercase">
         Sign In / Sign Up
       </button>
       <div
         @click="profileDropdownActive=!profileDropdownActive"
         @mouseenter="displayAvatar = user.avatarLinkGif"
         @mouseleave="displayAvatar = user.avatarLinkPng"
-        class="profile-container bg-gray-600 flex items-center text-center hover:bg-secondary transition duration-300 ease-in-out text-white rounded-md px-7  py-3"
+        class="profile-container bg-back flex items-center text-center hover:bg-secondary transition duration-300 ease-in-out text-white rounded-md px-7  py-3"
         v-if="isLogin">
         <img class="rounded-full mx-2" :src="displayAvatar">
-        <span class="username transition duration-300 ease-in-out bg-gray-600 font-bold">{{ user.username }}</span>
+        <span class="username transition duration-300 ease-in-out bg-back font-bold">{{ user.username }}</span>
       </div>
       <div :class="{'hidden': !profileDropdownActive, 'visible': profileDropdownActive}"
-           class="profile-settings bg-gray-600 absolute items-center mt-40 rounded-b-md">
+           class="profile-settings bg-back absolute items-center mt-40 rounded-b-md">
         <div class="ml-1 pt-1">
           <ProfilDropdowSettings href="/profile" :text="`👤️ ${$t('navbar.profile-dropdown.profile')}`"/>
           <ProfilDropdowSettings href="/friends" :text="`👥 ${$t('navbar.profile-dropdown.friends')}`"/>

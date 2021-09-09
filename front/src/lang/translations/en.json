@@ -7,8 +7,14 @@
       "friends": "Friends",
       "settings": "Settings",
       "logout": "Logout"
-
     }
-
+  },
+  "battle": {
+    "change-lang": "Change language",
+    "submit": "Submit",
+    "test": "Run tests"
+  },
+  "ide": {
+    "default": "// Please assume that all the discord librairy and client is imported so please,\n// don't import discord.js & the client just write the question that is asked to you"
   }
 }

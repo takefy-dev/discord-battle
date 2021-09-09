@@ -1,12 +1,20 @@
-  {
-  "navbar" : {
+{
+  "navbar": {
     "how-to-play": "Comment jouer ?",
     "speedgame": "Jeux rapide",
-    "profile-dropdown" : {
+    "profile-dropdown": {
       "profile": "Profile",
       "friends": "Amis",
       "settings": "Paramètres",
       "logout": "Déconnexion"
     }
+  },
+  "battle": {
+    "change-lang": "Changer de language",
+    "submit": "Confirmer",
+    "test": "Tester le programme"
+  },
+  "ide": {
+    "default": "// La librairy discord.js est déjà importé par default ainsi que le client,\n// s'il vous plaît faites uniquement la question qui vous est posé."
   }
 }

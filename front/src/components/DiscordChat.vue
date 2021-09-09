@@ -1,6 +1,6 @@
 <template>
-  <iframe src="https://e.widgetbot.io/channels/859094511036530739/866723226373455882" height="600"
-          width="790"></iframe>
+  <iframe src="https://e.widgetbot.io/channels/859094511036530739/866723226373455882"
+          width="600"></iframe>
 </template>
 
 <script>

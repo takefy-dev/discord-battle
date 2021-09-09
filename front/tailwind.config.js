@@ -7,7 +7,8 @@ module.exports = {
         main: '#161F2D',
         primary: '#A4ADE9',
         secondary: '#A4ADE9',
-        submain: '#E9EBFA'
+        submain: '#9099d3',
+        back: '#323F4A'
       }
     }
   },
